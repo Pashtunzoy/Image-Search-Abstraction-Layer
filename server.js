@@ -47,13 +47,15 @@ app.get('/:searchText?', (req, res) => {
         'context': data.sourceUrl
         }
     });
-    const termToBeSaved = new LatestSearch({ term: req.params.searchText });
-    termToBeSaved.save(function (err, term) {
-      if (err) return console.error(err);
-      if(term) {
-        console.log(term);
-      }
-    });
+    if(req.params.searchText !== "favicon.ico") {
+      const termToBeSaved = new LatestSearch({ term: req.params.searchText });
+      termToBeSaved.save(function (err, term) {
+        if (err) return console.error(err);
+        if(term) {
+          console.log(term);
+        }
+      });
+    }
     res.send(result);
   });
 });
