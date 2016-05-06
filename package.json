@@ -1,0 +1,17 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "0.0.0",
+  "description": "A image search abstraction layer",
+  "main": "server.js",
+  "repository": "",
+  "author": "Asif Norzai <asifkhannoorzai@gmail.com>",
+  "dependencies": {
+    "bing.search": "^1.0.1",
+    "dotenv": "^2.0.0",
+    "express": "~3.2.4",
+    "mongoose": "^4.4.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}

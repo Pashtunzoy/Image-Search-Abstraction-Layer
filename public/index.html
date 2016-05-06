@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Search Abstraction Layer</title>
+    <link rel="stylesheet" href="/public/css/main.css" type="text/css" />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Search Abstraction Layer</h1>
+        <main>
+            <section>
+                <p>Search this app using: <pre class="prettyprint">https://img-sch.herokuapp.com/cute bunnies</pre> or if you wan to limit result by 3: <pre  class="prettyprint">https://img-sch.herokuapp.com/cute bunnies?offset=3</pre></p>
+                <p>This will result in:</p>
+                <code class="prettyprint">
+                    [
+                        {
+                            url: "http://1.bp.blogspot.com/-3XBUPZtl2hk/TkzFiB6HxgI/AAAAAAAAA_Q/z4rxNi333T0/s1600/cute+bunny+011.jpg",
+                            snippet: "cute bunnies on these posts 20 cute bunny pictures part 2 cute bunny ...",
+                            thumbnail: "http://ts4.mm.bing.net/th?id=OIP.Mb46af98e755689d677b25515a089aa0eH0&pid=15.1",
+                            context: "http://amazing-creature.blogspot.com/2011/08/20-cute-bunny-pictures.html"
+                        },
+                        {
+                            url: "http://2.bp.blogspot.com/-0MJqnlFwHa8/TkzFuZ8qX2I/AAAAAAAAA_g/3ICFA6UzckI/s1600/cute+bunny+015.jpg",
+                            snippet: "cute bunnies on these posts 20 cute bunny pictures part 2 cute bunny ...",
+                            thumbnail: "http://ts1.mm.bing.net/th?id=OIP.M9a0d003a0750421713b029db3513dff9o0&pid=15.1",
+                            context: "http://amazing-creature.blogspot.com/2011/08/20-cute-bunny-pictures.html"
+                        },
+                        {
+                            url: "http://1.bp.blogspot.com/-hPVrY63fq74/TkzFR1mOGzI/AAAAAAAAA-w/SSMKVjWL_d8/s640/cute+bunny+003.jpg",
+                            snippet: "cute bunny picture",
+                            thumbnail: "http://ts3.mm.bing.net/th?id=OIP.Mfec5a24af96f278ee97cc24045b00ba8H0&pid=15.1",
+                            context: "http://amazing-creature.blogspot.com/2011/08/20-cute-bunny-pictures.html"
+                        }
+                    ]
+                </code>
+                
+                <p>To see the latest 10 search queries visit: <pre class="prettyprint">https://img-sch.herokuapp.com/latest</pre></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
