@@ -4,7 +4,6 @@ For Example visit [https://img-sch.herokuapp.com](https://img-sch.herokuapp.com)
 
 Example:
 ![Imgur](http://i.imgur.com/8mAbKAQ.png)
-
 ## Running the server
 
 1) Add a data folder before running `server.js` and  make sure mongod point to it in the data path.
@@ -13,4 +12,4 @@ Example:
 
 3) Alternatively you can launch the app from the Terminal:
 
-    $ node server.js
+    $ nodemon server.js
